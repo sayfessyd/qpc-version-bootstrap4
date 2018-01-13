@@ -1,1 +1,13 @@
 # qpc-version-bootstrap4
+- Yarn
+- Express.js
+- Socket.io
+- Pug
+- Bootstrap 4
+- Fontawesome
+- jQuery
+
+"Questions pour un champion" is a french game show produced under license from the company Fremantle Media, broadcast on FR3 and France 3 since November 7, 1988 and rebroadcast on TV5 Monde.
+
+## Screenshot
+![Screenshot](https://raw.githubusercontent.com/sayfessyd/qpc-version-bootstrap4/master/Screenshot.png)
