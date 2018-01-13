@@ -12,7 +12,6 @@
 
 ## Screenshots
 ![Screenshot](https://raw.githubusercontent.com/sayfessyd/qpc-version-bootstrap4/master/Screenshot.png)
-
-![Technologies](https://raw.githubusercontent.com/sayfessyd/qpc-version-bootstrap4/master/Technologies.png)
+![Screenshot2](https://raw.githubusercontent.com/sayfessyd/qpc-version-bootstrap4/master/Screenshot2.png)
 
 
