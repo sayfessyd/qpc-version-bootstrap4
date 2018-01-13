@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>QPC - Le Jeu</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/lib/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="center" style="height:150px">
+		<!-- Button trigger modal -->
+		<div class="form-group">
+			<a href="#" class="btn btn-info" data-toggle="modal" data-target="#jeuModal">#{button_label} <i class="fa fa-gamepad" aria-hidden="true"></i></a>
+			<a href="/config" class="btn btn-warning">Configuration <i class="fa fa-cog" aria-hidden="true"></i></a>
+		</div>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="jeuModal" tabindex="-1" role="dialog" aria-labelledby="jeuModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="jeuModalLabel">
+							<div style="display:inline">Veuillez attendre les autres joueurs pour rejoindre la partie...</div>
+							<span id="count" class="badge badge-secondary">
+								<span></span>
+								<i class="fa fa-heartbeat" aria-hidden="true"></i>
+							</span>
+							<span id="score" class="badge badge-warning">
+								<span></span>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</span>
+						</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="input-group">
+									<input id="reponse" type="text" class="form-control" placeholder="Reponse" aria-label="Search for...">
+									<span class="input-group-btn">
+										<button id="envoyer" class="btn btn-secondary" type="button" disabled>Envoyer</button>
+									</span>
+								</div>
+							</div>
+						</div>
+						<br>
+						<h6 id="indices"></h6>
+						<div id="buzzer-msg" class="alert alert-danger" style="display:none" role="alert">Un joueur a utilisé le buzzer, Veuillez attendre...</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Quitter</button>
+						<button id="buzzer" type="button" class="btn btn-danger" disabled>BUZZ
+							<i class="fa fa-bullseye" aria-hidden="true"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<audio id="generique" class="sound hidden" src="assets/sounds/generique.mp3" controls></audio>
+	<audio id="loop-music" class="sound hidden" src="assets/sounds/musique-question.mp3"></audio>
+	<audio id="buzz" class="sound hidden" src="assets/sounds/buzz.mp3"></audio>
+	<audio id="perdu" class="sound hidden" src="assets/sounds/perdu.mp3"></audio>
+	<audio id="ding-applause" class="sound hidden" src="assets/sounds/ding-applause.mp3"></audio>
+	<audio id="dingdong" class="sound hidden" src="assets/sounds/dingdong.mp3"></audio>
+	<script src="/socket.io/socket.io.js"></script>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="assets/js/lib/jquery-3.2.1.slim.min.js"></script>
+	<script src="assets/js/lib/popper.min.js"></script>
+	<script src="assets/js/lib/bootstrap.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>

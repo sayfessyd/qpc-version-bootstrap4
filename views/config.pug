@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>QPC - Admin</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/lib/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="center">
+		<a href="/" class="btn btn-dark btn-lg">Retourner au menu <i class="fa fa-repeat" aria-hidden="true"></i></a>
+		
+		<form method="post" action="/question">
+			<div class="form-group">
+				<label for="question" style="color: #eee">Question</label>
+				<input type="text" name="question" class="form-control form-control-lg" placeholder="Question">
+			</div>
+			<div class="form-group">
+				<label for="indices" style="color: #eee">Indices</label>
+				<div id="indices" class="input-group input-group-sm">
+					<input type="text" name="indice1" class="form-control" placeholder="Indice1" value="">
+					<input type="text" name="indice2" class="form-control" placeholder="Indice2" value="">
+					<input type="text" name="indice3" class="form-control" placeholder="Indice3" value="">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="reponse" style="color: #eee">Reponse</label>
+				<input type="text" name="reponse" class="form-control form-control-lg" placeholder="Reponse" value="">
+			</div>
+			<div class="form-group pull-left">
+				<button type="submit" class="btn">Ajouter <i class="fa fa-plus" aria-hidden="true"></i></button>
+			</div>
+		</form>
+		<form method="post" action="/config">
+			<div class="form-group">
+				<label for="start" style="color: #eee">Compte à rebours</label>
+				<input type="text" name="start" class="form-control form-control-sm" id="start" placeholder="Start" value="#{start}">
+			</div>
+			<div class="form-group">
+				<label for="max_joueurs" style="color: #eee">Max Joueur</label>
+				<input type="text" name="max_joueurs" class="form-control form-control-sm" id="max-joueur" placeholder="Max Joueur" value="#{max_joueurs}">
+			</div>
+			<div class="form-group">
+				<label for="points" style="color: #eee">Points par question</label>
+				<input type="text" name="points" class="form-control form-control-sm" id="points" placeholder="Points" value="#{points}">
+			</div>
+			<div class="form-group">
+				<label for="buzzer_timer" style="color: #eee">Temps d'attente du Buzzer</label>
+				<input type="text" name="buzzer_timer" class="form-control form-control-sm" id="buzzer-timer" placeholder="Buzzer Timer" value="#{buzzer_timer}">
+			</div>
+			<div class="form-group pull-right">
+				<button type="submit" class="btn btn-primary">Enregistrer <i class="fa fa-check" aria-hidden="true"></i></button>
+			</div>
+		</form>
+	</div>
+	<script src="/socket.io/socket.io.js"></script>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="assets/js/lib/jquery-3.2.1.slim.min.js"></script>
+	<script src="assets/js/lib/popper.min.js"></script>
+	<script src="assets/js/lib/bootstrap.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>

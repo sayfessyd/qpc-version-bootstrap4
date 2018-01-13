@@ -1,0 +1,26 @@
+.hidden{
+    display: none;
+}
+
+.center {
+    display: flex;
+    float: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+body {
+    background: url('../img/bg1.jpg') no-repeat fixed;
+    background-position: 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
