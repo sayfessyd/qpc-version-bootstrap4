@@ -11,7 +11,9 @@
 - jQuery
 
 ## Screenshots
+### Home Page
 ![Screenshot](https://raw.githubusercontent.com/sayfessyd/qpc-version-bootstrap4/master/Screenshot.png)
+### Configuration Page
 ![Screenshot2](https://raw.githubusercontent.com/sayfessyd/qpc-version-bootstrap4/master/Screenshot2.png)
 
 
